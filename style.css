@@ -1,0 +1,437 @@
+*{
+    font-size: 16px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+
+    position: fixed;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+    z-index: 2;
+}
+
+nav h3 a{
+    color: rgb(81, 77, 77);
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+
+    padding: 10px;
+}
+
+nav h3 a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav ul{
+    display: flex;
+    
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: rgb(81, 77, 77);
+    font-size: 17px;
+    letter-spacing: 2px;
+
+    padding: 10px 15px;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.banner{
+    width: 100vw;
+    height: 650px;
+
+    padding-top: 55px;
+
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner h1{
+    color: rgb(81, 77, 77);
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+}
+
+#about,#contact{
+    padding: 50px;
+}
+
+#about .about-box, #menu .menu-box{
+    width: 85%;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.about-box .img-box, .menu-box .img-box{
+    width: 50%;
+}
+
+.about-box .img-box img, .menu-box .img-box img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+    opacity: 0.8;
+}
+
+.about-box .about-para, .menu-items{
+    width: 50%;
+
+    padding: 30px 40px;
+}
+
+.about-para h1, .since-title, .menu-items h1{
+    text-align: center;
+}
+
+.about-para h1, .menu-items h1, .contact-container h1{
+    font-size: 35px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+
+    margin-bottom: 30px;
+}
+
+.about-para .since-title{
+    color: rgb(81, 77, 77);
+    font-size: 18px;
+    letter-spacing: 3px;
+
+    margin: 20px 0;
+}
+
+.about-para .first-para, .second-para{
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.4;
+
+    margin: 15px 0;
+}
+
+.about-para .first-para > span{
+    background-color: #eee;
+
+    padding: 5px 10px;
+}
+
+.about-para .second-para{
+    color: #8f8c8c;
+}
+
+#menu{
+    padding: 0 50px;
+}
+
+.menu-items .menu{
+    margin: 50px 0;
+}
+
+.menu h3{
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.menu p{
+    color: grey;
+    font-size: 15px;
+}
+
+.contact-container{
+    width: 85%;
+
+    margin: 0 auto;
+}
+
+.contact-container h3{
+    color: rgb(26, 133, 120);
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.contact-container p{
+    margin: 25px 0;
+}
+
+.contact-container .form-group{
+    margin: 10px 0;
+}
+
+.contact-container .form-group .form-control{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid rgb(216, 213, 213);
+
+    padding: 20px 15px;
+}
+
+.contact-container form button{
+    background-color: #eee;
+    font-size: 15px;
+    border: none;
+
+    padding: 10px 15px;
+    margin-top: 20px;
+
+    cursor: pointer;
+}
+
+.contact-container form button:hover{
+    background-color: #ccc;
+}
+
+footer{
+    background-color: #eee;
+    text-align: center;
+
+    padding: 50px 0;
+}
+
+@media screen and (max-width: 1250px) {
+    .about-box .about-para{
+        padding: 20px 30px;
+    }
+
+    .about-para h1{
+        font-size: 30px;
+    
+        margin-bottom: 25px;
+    }
+    
+    .about-para .since-title{
+        font-size: 17px;
+    
+        margin: 15px 0;
+    }
+    
+    .about-para .first-para, .second-para{
+        font-size: 16px;
+        line-height: 1.3;
+    
+        margin: 10px 0;
+    }
+
+    .about-para .first-para > span{
+        padding: 3px 8px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .about-box .about-para{
+        padding: 15px 25px;
+    }
+
+    .about-para h1{
+        font-size: 25px;
+    
+        margin-bottom: 15px;
+    }
+    
+    .about-para .since-title{
+        font-size: 16px;
+    
+        margin: 10px 0;
+    }
+    
+    .about-para .first-para, .second-para{
+        font-size: 15px;
+        line-height: 1.1;
+    
+        margin: 7px 0;
+    }
+
+    .about-para .first-para > span{
+        padding: 1px 6px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-para .second-para{
+        display: none;
+    }
+
+    #menu{
+        overflow-x: hidden;
+        padding: 10px;
+    }
+
+    #menu .menu-box{
+        width: 100%;
+        flex-direction: column;
+
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .menu-items{
+        width: 100%;
+    }
+
+    .menu-box .img-box{
+        width: 98.5%;
+    }
+
+    .menu-box .img-box img{
+        width: 100%;
+    }
+
+    .contact-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .banner{
+        height: 550px;
+    }
+
+    .about-box .about-para{
+        padding: 10px 20px;
+    }
+
+    .about-para h1{
+        font-size: 20px;
+    
+        margin-bottom: 10px;
+    }
+    
+    .about-para .since-title{
+        font-size: 15px;
+    
+        margin: 8px 0;
+    }
+    
+    .about-para .first-para{
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .about-para .first-para > span{
+        padding: 0 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul{
+        display: none;
+    }
+
+    .banner{
+        height: 500px;
+    }
+
+    #about{
+        padding: 20px;
+    }
+
+    #about .about-box{
+        width: 100%;
+    }
+
+    .about-box .img-box{
+        display: none;
+    }
+
+    .about-box .about-para{
+        width: 100%;
+
+        padding: 0;
+    }
+    
+    .about-para h1{
+        font-size: 35px;
+        letter-spacing: 4px;
+    
+        margin-bottom: 30px;
+    }
+    
+    .about-para .since-title{
+        font-size: 18px;
+        letter-spacing: 3px;
+    
+        margin: 20px 0;
+    }
+    
+    .about-para .first-para, .second-para{
+        font-size: 17px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+    
+        margin: 15px 0;
+    }
+    
+    .about-para .first-para > span{
+        padding: 5px 10px;
+    }
+
+    .about-para .second-para{
+        display: block;
+    }
+
+    .menu h3{
+        font-size: 19px;
+    }
+    
+    .menu p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav h3 a{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .banner{
+        height: 400px;
+    }
+}
